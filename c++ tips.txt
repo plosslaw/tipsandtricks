@@ -1,0 +1,6 @@
+c++:
+for(pair<int, int>& p:arr){...} ---- obtain reference to each element
+
+for(pair<int, int> p:arr){...} ---- creates copy of each element
+
+include <algorithm> to enable min({...}) finding min of a list of elements

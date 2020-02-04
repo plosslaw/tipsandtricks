@@ -1,0 +1,15 @@
+vim -O a.java b.java ----- open in horizontal split
+vim -o a.java b.java ----- open in vertical split
+:split, ctrl-w-direction key to change focused window
+u --- undo
+:w --- save
+:q --- quit
+:next, :prev ---- tab between different files
+v -- visual mode(highlighting)
+d -- cut
+y -- copy
+p -- paste
+yy/Y --- yank current line
+gp -- paste and move cursor to end of pasted text
+:colorscheme torte -- pseudo dark mode
+
