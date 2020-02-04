@@ -5,3 +5,6 @@ command prompt -> right click title bar -> properties -> options -> edit options
 
 checkstyle for java
 https://github.com/checkstyle/checkstyle/releases/
+
+be familiar with http protocol
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
