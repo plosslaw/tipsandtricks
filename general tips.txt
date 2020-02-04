@@ -8,3 +8,18 @@ https://github.com/checkstyle/checkstyle/releases/
 
 be familiar with http protocol
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+
+starting with what is OO programming? 
+What is the difference between an ArrayList and HashSet?
+What method's should you over-ride along with isEqual()? 
+what is an interface? 
+what is an abstract? 
+What's the difference between the two?
+what does Integer inherit from? 
+can you have more than one constructor? 
+how do you handle exceptions? 
+can you use more than one catch block?
+can you create an object from the class above it in the object's constructor? 
+Name all of the reserved words in Java? 
+What does serializable mean?
+Can you name methods by the same name?
