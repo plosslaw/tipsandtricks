@@ -3,6 +3,8 @@ win-x u u for fast shut down
 enable right click pasting shortcut
 command prompt -> right click title bar -> properties -> options -> edit options -> quickedit
 
+material theme(darker high contrast) + material icon theme
+
 checkstyle for java
 https://github.com/checkstyle/checkstyle/releases/
 
