@@ -13,3 +13,10 @@ yy/Y --- yank current line
 gp -- paste and move cursor to end of pasted text
 :colorscheme torte -- pseudo dark mode
 
+autocomplete:
+ctrl+p: previous – suggest based on previous typed words
+ctrl+n: next – suggest based on the next coming  words
+How to make a selection when multiple suggestions are shown?
+
+When pressing you are ctrl+p (ctrl+n), you are shown multiple suggestions and you want to make use of nth  suggestion, press ctrl+p (ctrl+n) n-1 times and continue editing. That is if you are shown five suggestions, and you want to use third suggestion, press ctrl+p two times and you can continue editing.
+
