@@ -41,3 +41,7 @@ In Java, a static method is a method that belongs to a class rather than an inst
   "command": "workbench.action.terminal.focus",
   "when": "terminalFocus"
 }
+
+
+Visual Studio Build Tools - .NET 4.5 targeting pack
+https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15
