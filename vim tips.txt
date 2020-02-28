@@ -13,6 +13,10 @@ yy/Y --- yank current line
 gp -- paste and move cursor to end of pasted text
 :colorscheme torte -- pseudo dark mode
 
+"+p or "*p to paste from clipboard
+"+y or "*y to copy selection to clipboard
+"+yy or "*yy to copy current line to clipboard
+
 autocomplete:
 ctrl+p: previous – suggest based on previous typed words
 ctrl+n: next – suggest based on the next coming  words
