@@ -34,3 +34,6 @@ initialising vector
   
     vector<int> vect2(vect1.begin(), vect1.end()); 
 
+
+run file as input/output with compiled c++ program:
+./myProgram <data1.txt >out.txt
