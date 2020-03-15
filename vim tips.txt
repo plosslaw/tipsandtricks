@@ -67,6 +67,7 @@ t - find up to excluding character
 ; - repeat latest f, t, F or T [count] times
 > - indent inwards
 < - indent outwards
+== - indent current line
 y - yank
 yy - yank current line
 dd - delete current line
