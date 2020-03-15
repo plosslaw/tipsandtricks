@@ -25,3 +25,30 @@ How to make a selection when multiple suggestions are shown?
 When pressing you are ctrl+p (ctrl+n), you are shown multiple suggestions and you want to make use of nth  suggestion, press ctrl+p (ctrl+n) n-1 times and continue editing. That is if you are shown five suggestions, and you want to use third suggestion, press ctrl+p two times and you can continue editing.
 
 clear highlighting after search: :noh
+
+vim directions:
+j - down
+k - up
+h - left
+l - right
+
+vim operations:
+d - delete
+c - delete and write
+. - repeat previous operation
+f - find 
+> - indent inwards
+< - indent outwards
+
+
+vim nouns:
+w - word
+b - word behind, bypasses to previous line
+iw - inner word (detected by vim)
+i" - inner quotation
+i( - inner bracket
+i< - inner diamond
+it - inner tag (<p>this is the inner tag content</p>)
+2k - 2 lines upwards from cursor
+2j - 2 lines downwards from cursor
+3l - 3 char to the right of cursor
