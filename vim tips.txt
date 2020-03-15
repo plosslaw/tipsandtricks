@@ -62,7 +62,9 @@ vim operations:
 d - delete
 c - delete and write
 . - repeat previous operation
-f - find 
+f - find up to including character
+t - find up to excluding character
+; - repeat latest f, t, F or T [count] times
 > - indent inwards
 < - indent outwards
 y - yank
