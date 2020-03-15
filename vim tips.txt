@@ -49,6 +49,10 @@ nG – move to line number n i.e. 17G - goes to line 17
 {/} - jump to prev/next paragraph
 $ - from current cursor position till the end of the line
 G - from current cursor position till the end of file
+0 (zero) - move to the start of the line
+% - find a matching ),], or }
+ctrl-w - jump from one window to another
+e - move to the end of a word
 
 vim operations:
 d - delete
