@@ -12,8 +12,11 @@ p -- paste
 yy/Y --- yank current line
 gp -- paste and move cursor to end of pasted text
 
+settings
 :colorscheme torte -- pseudo dark mode
 :set number
+:set relativenumber
+:set rnu
 
 "+p or "*p to paste from clipboard
 "+y or "*y to copy selection to clipboard
