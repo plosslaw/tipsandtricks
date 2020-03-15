@@ -31,6 +31,9 @@ j - down
 k - up
 h - left
 l - right
+**word is separated by whitespace, token stops at special characters**
+w/W - forward by token/word 
+b/B - backwards by token/word
 
 vim operations:
 d - delete
@@ -39,16 +42,21 @@ c - delete and write
 f - find 
 > - indent inwards
 < - indent outwards
+y - yank
+v - visually select (highlight)
+p - paste (does not use a noun)
+x - cut
 
-
-vim nouns:
-w - word
-b - word behind, bypasses to previous line
-iw - inner word (detected by vim)
-i" - inner quotation
-i( - inner bracket
-i< - inner diamond
-it - inner tag (<p>this is the inner tag content</p>)
-2k - 2 lines upwards from cursor
-2j - 2 lines downwards from cursor
-3l - 3 char to the right of cursor
+<h1>vim nouns:</h1>
+<ul>
+<li>w - word</li>
+<li>b - word behind, bypasses to previous line</li>
+<li>iw - inner word (detected by vim)</li>
+<li>i" - inner quotation</li>
+<li>i( - inner bracket</li>
+<li>i< - inner diamond</li>
+<li>it - inner tag (<p>this is the inner tag content</p>)</li>
+<li>2k - 2 lines upwards from cursor</li>
+<li>2j - 2 lines downwards from cursor</li>
+<li>3l - 3 char to the right of cursor</li>
+</ul>
