@@ -8,6 +8,7 @@ set autoindent
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 nnoremap <F2> :args *.cpp <bar> tab all
 nnoremap <C-v> "+p
+vnoremap <C-v> "+p
 vnoremap <C-c> "+y
 nnoremap <C-c> "+yy
 
