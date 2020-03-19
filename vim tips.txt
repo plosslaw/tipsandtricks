@@ -14,6 +14,7 @@ yy/Y --- yank current line
 gp -- paste and move cursor to end of pasted text
 
 :tabnew filename - open file in new tab
+:tab all file1.cpp file2.cpp file3.cpp
 :read filename/:r sk.cpp - copy contents of filename to current editor
 gt - cycle through tabs forward
 gT - cycle through tabs backward
