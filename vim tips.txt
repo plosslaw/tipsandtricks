@@ -12,6 +12,10 @@ p -- paste
 yy/Y --- yank current line
 gp -- paste and move cursor to end of pasted text
 
+:tabnew filename - open file in new tab
+gt - cycle through tabs forward
+gT - cycle through tabs backward
+
 settings
 copy vimrc to C:\Users\Your Name\_vimrc and use the copied vimrc file
 :colorscheme torte -- pseudo dark mode
