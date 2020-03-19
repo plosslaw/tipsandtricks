@@ -13,6 +13,7 @@ vnoremap <C-c> "+y
 nnoremap <C-c> "+yy
 inoremap jj <ESC>
 vnoremap ii <ESC>
+cnoremap kj <C-C>
 
 autocmd filetype java nnoremap <F5> :w <bar> !javac % && java -enableassertions %:r <CR>
 autocmd filetype python nnoremap <F5> :w <bar> !python % <CR>
