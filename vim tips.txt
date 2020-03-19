@@ -6,6 +6,7 @@ u --- undo, ctrl - r --- rollback undo
 :q --- quit
 :next, :prev ---- tab between different files
 v -- visual mode(highlighting)
+V -- select current line
 d -- cut
 y -- copy
 p -- paste
