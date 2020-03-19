@@ -6,6 +6,8 @@ colorscheme desert
 set number relative number
 set autoindent
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+nnoremap <F2> :args *.cpp <bar> tab all
+
 autocmd filetype java nnoremap <F5> :w <bar> !javac % && java -enableassertions %:r <CR>
 autocmd filetype python nnoremap <F5> :w <bar> !python % <CR>
 autocmd filetype perl nnoremap <F5> :w <bar> !perl % <CR>
