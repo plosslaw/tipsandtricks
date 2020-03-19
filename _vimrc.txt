@@ -18,4 +18,5 @@ autocmd filetype cpp nnoremap <F6> :w <bar> !g++ -ulimit -Wall -Wno-unused-resul
 
 plugins:
 https://github.com/tpope/vim-surround
+https://github.com/mhartington/oceanic-next
 https://github.com/ycm-core/YouCompleteMe
