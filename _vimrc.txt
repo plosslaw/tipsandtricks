@@ -25,3 +25,13 @@ https://github.com/tpope/vim-pathogen
 https://github.com/tpope/vim-surround
 https://github.com/mhartington/oceanic-next
 https://github.com/ycm-core/YouCompleteMe
+
+
+n: normal only
+v: visual and select
+o: operator-pending
+x: visual only
+s: select only
+i: insert
+c: command-line
+l: insert, command-line, regexp-search (and others. Collectively called "Lang-Arg" pseudo-mode)
