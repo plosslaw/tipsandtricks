@@ -1,0 +1,14 @@
+important quality of life vimrc configs
+
+_vimrc:
+syntax on(if needed)
+colorscheme desert
+set number relative number
+set autoindent
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+autocmd filetype java nnoremap <F5> :w <bar> !javac % && java -enableassertions %:r <CR>
+autocmd filetype python nnoremap <F5> :w <bar> !python % <CR>
+autocmd filetype perl nnoremap <F5> :w <bar> !perl % <CR>
+autocmd filetype go nnoremap <F5> :w <bar> !go build % && ./%:r <CR>
+
+autocmd filetype cpp nnoremap <F5> :w <bar> !g++-4.8 -ulimit -Wall -Wno-unused-result -std=c++11   -O2   % -o %:r && ./%:r <CR>
