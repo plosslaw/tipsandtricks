@@ -17,6 +17,7 @@ gp -- paste and move cursor to end of pasted text
 :read filename/:r sk.cpp - copy contents of filename to current editor
 gt - cycle through tabs forward
 gT - cycle through tabs backward
+<num> gt - go to tab <num>
 
 settings
 copy vimrc to C:\Users\Your Name\_vimrc and use the copied vimrc file
