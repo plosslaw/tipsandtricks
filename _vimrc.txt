@@ -9,7 +9,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 nnoremap <F2> :args *.cpp <bar> tab all <CR>
 nnoremap <C-v> "+p
 vnoremap <C-v> "+p
-inoremap <C-v> "+p
+inoremap <C-v> <ESC>"+p A
 
 vnoremap <C-c> "+y
 nnoremap <C-c> "+yy
