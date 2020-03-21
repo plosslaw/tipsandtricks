@@ -17,8 +17,8 @@ inoremap jj <ESC>
 vnoremap ii <ESC>
 
 "quick comment
-noremap <C-m> :<S-Left>exe "<S-Right>normal! ".comment<CR>
-noremap <C-n> :<S-Left>exe "<S-Right>normal! ".uncomment<CR>
+noremap <silent><C-m> :<S-Left>exe "<S-Right>normal! ".comment<CR>
+noremap <silent><C-n> :<S-Left>exe "<S-Right>normal! ".uncomment<CR>
 
 autocmd filetype java let comment='I//'
 autocmd filetype java let uncomment='^xx'
