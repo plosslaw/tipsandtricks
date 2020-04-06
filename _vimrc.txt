@@ -3,7 +3,7 @@ important quality of life vimrc configs
 _vimrc:
 syntax on(if needed)
 colorscheme desert
-set number relative number
+set number relativenumber
 set autoindent
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 nnoremap <F2> :args *.cpp <bar> tab all <CR>
