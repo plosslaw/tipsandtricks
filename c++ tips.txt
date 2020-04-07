@@ -1,4 +1,6 @@
 c++:
+input end of input character with ctrl-z(win) ctrl-d(unix)
+
 for(pair<int, int>& p:arr){...} ---- obtain reference to each element
 
 for(pair<int, int> p:arr){...} ---- creates copy of each element
