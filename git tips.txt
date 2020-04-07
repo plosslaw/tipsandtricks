@@ -14,3 +14,6 @@ git log
 
 undo last commit
 git reset --soft HEAD~1
+
+undo stage
+git reset
