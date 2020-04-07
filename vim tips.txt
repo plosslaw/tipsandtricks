@@ -83,6 +83,7 @@ dd - delete current line
 v - visually select (highlight)
 
 vim special operations:
+cc- replace current line and insert at correct indentation level
 o/O - insert new line after/before current line
 i/I - insert behind of cursor/at start of line
 a/A - insert forward of cursor/at end of line
