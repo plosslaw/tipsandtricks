@@ -12,4 +12,5 @@ Commands related to checking status or log history
 git status
 git log
 
-
+undo last commit
+git reset --soft HEAD~1
