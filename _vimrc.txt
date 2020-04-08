@@ -18,6 +18,8 @@ execute pathogen#infect()
 filetype plugin indent on
 
 
+set whichwrap+=<,>,h,l,[,]
+
 
 set number relativenumber
 set autoindent
