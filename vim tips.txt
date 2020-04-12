@@ -49,6 +49,8 @@ j - down
 k - up
 h - left
 l - right
+gj - visual down (not by line number)
+gk - visual up (not by line number)
 **word is separated by whitespace, token stops at special characters**
 w/W - forward by token/word 
 b/B - backwards by token/word
