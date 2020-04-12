@@ -71,7 +71,9 @@ e - move to the end of a word
 
 vim operations:
 d - delete
+D - delete to end of line
 c - delete and write
+C - delete and write to end of line
 . - repeat previous operation
 f - find up to including character
 t - find up to excluding character
@@ -85,6 +87,8 @@ dd - delete current line
 v - visually select (highlight)
 
 vim special operations:
+hold A - record input as command(can be repeated by pressing . )
+J - join current line with line below
 cc- replace current line and insert at correct indentation level
 o/O - insert new line after/before current line
 i/I - insert behind of cursor/at start of line
@@ -108,6 +112,9 @@ vim nouns:
 w - word
 b - word behind, bypasses to previous line
 iw - inner word (detected by vim)
+aw - around word including whitespace(detected by vim)
+is - inner sentence (terminated by .)
+ip - inner paragraph (terminated by newline char)
 i" - inner quotation
 i( - inner bracket
 i< - inner diamond
