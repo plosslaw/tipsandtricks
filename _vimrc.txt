@@ -57,6 +57,14 @@ autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -ulimit -Wall -Wno-unused-resul
 autocmd filetype cpp nnoremap <F6> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14   -O2   % -o %:r && %:r <CR>
 
 
+inoremap ;; <Esc>/<++><CR>"_c4l
+
+"for loop snippet
+autocmd filetype cpp inoremap ;fi for(int i = <++> ; i < <++>; i++){<CR><++><CR>} <Esc>/<++><CR>"_c4l 
+autocmd filetype cpp inoremap ;fj for(int j = <++> ; j < <++>; j++){<CR><++><CR>} <Esc>/<++><CR>"_c4l
+autocmd filetype cpp inoremap ;fk for(int k = <++> ; k < <++>; k++){<CR><++><CR>} <Esc>/<++><CR>"_c4l 
+
+
 
 plugins:
 https://github.com/tpope/vim-pathogen
