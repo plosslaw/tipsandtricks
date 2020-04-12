@@ -87,7 +87,7 @@ dd - delete current line
 v - visually select (highlight)
 
 vim special operations:
-hold A - record input as command(can be repeated by pressing . )
+A + text input - can be repeated by pressing . to add text input to end of any line
 J - join current line with line below
 cc- replace current line and insert at correct indentation level
 o/O - insert new line after/before current line
