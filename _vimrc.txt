@@ -56,14 +56,15 @@ autocmd filetype go nnoremap <F5> :w <bar> !go build % && %:r <CR>
 autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r && %:r <CR>
 autocmd filetype cpp nnoremap <F6> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14   -O2   % -o %:r && %:r <CR>
 
-
+inoremap {<CR> {<CR><CR>}<Esc>kcc
 inoremap ;; <Esc>/<++><CR>"_c4l
 
 "for loop snippet
 autocmd filetype cpp inoremap ;fi for(int i = <++> ; i < <++>; i++){<CR><++><CR>} <Esc>/<++><CR>"_c4l 
 autocmd filetype cpp inoremap ;fj for(int j = <++> ; j < <++>; j++){<CR><++><CR>} <Esc>/<++><CR>"_c4l
 autocmd filetype cpp inoremap ;fk for(int k = <++> ; k < <++>; k++){<CR><++><CR>} <Esc>/<++><CR>"_c4l 
-autocmd filetype cpp inoremap ;# #include < ><Esc>hi 
+autocmd filetype cpp inoremap ;# #include <<++>> 
+
 
 
 
