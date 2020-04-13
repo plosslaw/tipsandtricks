@@ -7,6 +7,7 @@ material theme(darker high contrast) + material icon theme
 
 ctrl - shift - o -- open chrome bookmarks (can search within bookmarks)
 
+cls - clear cmd
 
 checkstyle for java
 https://github.com/checkstyle/checkstyle/releases/
