@@ -56,12 +56,12 @@ autocmd filetype go nnoremap <F5> :w <bar> !go build % && %:r <CR>
 
 autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r && %:r <CR>
 autocmd filetype cpp nnoremap <F6> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14   -O2   % -o %:r && %:r <CR>
-autocmd filetype cpp nnoremap <F7> :w <bar> !start g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r <CR><CR>
+autocmd filetype cpp nnoremap <F7> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r <CR>
 
 "alternative key binds
 "autocmd filetype cpp nnoremap <M-r> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r && %:r <CR>
 "autocmd filetype cpp nnoremap <M-o> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14   -O2   % -o %:r && %:r <CR>
-"autocmd filetype cpp nnoremap <M-c> :w <bar> !start g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r <CR><CR>
+"autocmd filetype cpp nnoremap <M-c> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r <CR>
 
 
 inoremap {<CR> {<CR><CR>}<Esc>kcc
