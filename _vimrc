@@ -116,6 +116,7 @@ autocmd filetype go nnoremap <F5> :w <bar> !go build % && %:r <CR>
 
 "C-v to paste input && C-c to terminate(by default)
 tnoremap <C-v> <C-l>"+
+tnoremap <M-v> exit<CR>
 
 autocmd filetype cpp nnoremap <silent><F5> :w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 ".expand('%')." -o ".expand('%:r')." && ".expand('%:r')."\<lt>CR>")<CR><C-w>k
 
