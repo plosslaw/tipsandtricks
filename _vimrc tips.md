@@ -39,6 +39,17 @@ vnoremap ii <ESC>
 noremap <silent><C-m> :<S-Left>exe "<S-Right>normal! ".comment<CR>
 noremap <silent><C-n> :<S-Left>exe "<S-Right>normal! ".uncomment<CR>
 
+"open terminal and return focus to editor/close terminal
+nnoremap <expr> <silent><M-v> (len(term_list())==0) ? ':terminal ++rows=10 <CR><C-l>j' :':call term_sendkeys(term_list()[0],"exit\<lt>CR>")<CR>'
+
+set twk=<C-l>
+nnoremap <C-l> <C-w>
+
+"C-v to paste input && C-c to terminate(by default)
+tnoremap <C-v> <C-l>"+
+
+
+
 autocmd filetype java let comment='I//'
 autocmd filetype java let uncomment='^xx'
 autocmd filetype cpp let comment='I//'
@@ -54,15 +65,21 @@ autocmd filetype python nnoremap <F5> :w <bar> !python % <CR>
 autocmd filetype perl nnoremap <F5> :w <bar> !perl % <CR>
 autocmd filetype go nnoremap <F5> :w <bar> !go build % && %:r <CR>
 
-autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r && %:r <CR>
-autocmd filetype cpp nnoremap <F6> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14   -O2   % -o %:r && %:r <CR>
-autocmd filetype cpp nnoremap <F7> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r <CR>
+autocmd filetype cpp nnoremap <silent><F5> :w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 ".expand('%')." -o ".expand('%:r')." && ".expand('%:r')."\<lt>CR>")<CR><C-w>k
+
+autocmd filetype cpp nnoremap <silent><F6> :w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand('%')." -o ".expand('%:r')." && ".expand('%:r')."\<lt>CR>")<CR><C-w>k
+
+autocmd filetype cpp nnoremap <silent><F7> :w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand('%')." -o ".expand('%:r')."\<lt>CR>")<CR><C-w>k
+
+"autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r && %:r <CR>
+"autocmd filetype cpp nnoremap <F6> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14   -O2   % -o %:r && %:r <CR>
+"autocmd filetype cpp nnoremap <F7> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r<CR>
 
 "alternative key binds
-"autocmd filetype cpp nnoremap <M-r> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r && %:r <CR>
-"autocmd filetype cpp nnoremap <M-o> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14   -O2   % -o %:r && %:r <CR>
-"autocmd filetype cpp nnoremap <M-c> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r <CR>
 
+autocmd filetype cpp nnoremap <M-r> :w <bar>  call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 ".expand('%')." -o ".expand('%:r')." && ".expand('%:r')."\<lt>CR>")<CR><C-w>k
+autocmd filetype cpp nnoremap <M-o> :w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand('%')." -o ".expand('%:r')." && ".expand('%:r')."\<lt>CR>")<CR><C-w>k
+autocmd filetype cpp nnoremap <M-c> :w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand('%')." -o ".expand('%:r')."\<lt>CR>")<CR><C-w>k
 
 inoremap {<CR> {<CR><CR>}<Esc>kcc
 inoremap ;; <Esc>/<++><CR>"_c4l
