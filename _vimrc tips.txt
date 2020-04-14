@@ -49,6 +49,7 @@ nnoremap <C-l> <C-w>
 
 "C-v to paste input && C-c to terminate(by default)
 tnoremap <C-v> <C-l>"+
+tnoremap <M-v> exit<CR>
 
 
 
