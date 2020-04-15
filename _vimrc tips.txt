@@ -114,6 +114,7 @@ inoremap [] []<++><Esc>4hi
 inoremap () ()<++><Esc>4hi
 inoremap {} {}<++><Esc>4hi
 inoremap <> <><++><Esc>4hi
+inoremap \\ '\n'
 
 "for loop snippet
 autocmd filetype cpp inoremap ;fi for(int i = <++> ; i < <++>; i++){<CR><++><CR>} <Esc>/<++><CR>"_c4l 
