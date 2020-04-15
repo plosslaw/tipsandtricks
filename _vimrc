@@ -80,6 +80,17 @@ nnoremap <M-p> :args *.cpp <bar> tab all <CR>
 vnoremap <C-v> "+p
 inoremap <C-v> <ESC>"+p A
 
+autocmd filetype cpp nnoremap <expr><F5> (len(term_list())==0)  
+            \? ':w <bar> terminal ++rows=10<CR><C-l>j' 
+            \: ':w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 ".expand("%")." -o ".expand("%:r")." && ".expand("%:r")."\<lt>CR>")<CR><C-w>k'
+
+autocmd filetype cpp nnoremap <expr><silent><F6> (len(term_list())==0)  
+            \? ':w <bar> terminal ++rows=10 <CR><C-l>j'
+            \: ':w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand("%")." -o ".expand("%:r")." && ".expand("%:r")."\<lt>CR>")<CR><C-w>k'
+
+autocmd filetype cpp nnoremap <expr><silent><F7> (len(term_list())==0)  
+            \? ':w <bar> terminal ++rows=10 <CR><C-l>j' 
+            \: ':w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand("%")." -o ".expand("%:r")."\<lt>CR>")<CR><C-w>k'fdskljfsa
 inoremap jj <ESC>
 vnoremap ii <ESC>
 
@@ -113,16 +124,23 @@ autocmd filetype perl nnoremap <F5> :w <bar> !perl % <CR>
 autocmd filetype go nnoremap <F5> :w <bar> !go build % && %:r <CR>
 
 
-
 "C-v to paste input && C-c to terminate(by default)
 tnoremap <C-v> <C-l>"+
 tnoremap <M-v> exit<CR>
 
-autocmd filetype cpp nnoremap <silent><F5> :w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 ".expand('%')." -o ".expand('%:r')." && ".expand('%:r')."\<lt>CR>")<CR><C-w>k
+"autocmd filetype cpp nnoremap <silent><F5> :w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 ".expand('%')." -o ".expand('%:r')." && ".expand('%:r')."\<lt>CR>")<CR><C-w>k
 
-autocmd filetype cpp nnoremap <silent><F6> :w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand('%')." -o ".expand('%:r')." && ".expand('%:r')."\<lt>CR>")<CR><C-w>k
+autocmd filetype cpp nnoremap <expr><F5> (len(term_list())==0)  
+            \? ':w <bar> terminal ++rows=10<CR><C-l>j' 
+            \: ':w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 ".expand("%")." -o ".expand("%:r")." && ".expand("%:r")."\<lt>CR>")<CR><C-w>k'
 
-autocmd filetype cpp nnoremap <silent><F7> :w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand('%')." -o ".expand('%:r')."\<lt>CR>")<CR><C-w>k
+autocmd filetype cpp nnoremap <expr><silent><F6> (len(term_list())==0)  
+            \? ':w <bar> terminal ++rows=10 <CR><C-l>j'
+            \: ':w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand("%")." -o ".expand("%:r")." && ".expand("%:r")."\<lt>CR>")<CR><C-w>k'
+
+autocmd filetype cpp nnoremap <expr><silent><F7> (len(term_list())==0)  
+            \? ':w <bar> terminal ++rows=10 <CR><C-l>j' 
+            \: ':w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand("%")." -o ".expand("%:r")."\<lt>CR>")<CR><C-w>k'
 
 "autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r && %:r <CR>
 
@@ -130,11 +148,17 @@ autocmd filetype cpp nnoremap <silent><F7> :w <bar> call term_sendkeys(term_list
 
 "autocmd filetype cpp nnoremap <F7> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14 % -o %:r<CR>
 
-autocmd filetype cpp nnoremap <M-r> :w <bar>  call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 ".expand('%')." -o ".expand('%:r')." && ".expand('%:r')."\<lt>CR>")<CR><C-w>k
+autocmd filetype cpp nnoremap <expr><silent><M-r> (len(term_list())==0)  
+            \? ':w <bar> terminal ++rows=10 <CR><C-l>j' 
+            \: ':w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 ".expand("%")." -o ".expand("%:r")." && ".expand("%:r")."\<lt>CR>")<CR><C-w>k'
 
-autocmd filetype cpp nnoremap <M-o> :w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand('%')." -o ".expand('%:r')." && ".expand('%:r')."\<lt>CR>")<CR><C-w>k
+autocmd filetype cpp nnoremap <expr><silent><M-o> (len(term_list())==0)  
+            \? ':w <bar> terminal ++rows=10 <CR><C-l>j'
+            \: ':w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand("%")." -o ".expand("%:r")." && ".expand("%:r")."\<lt>CR>")<CR><C-w>k'
 
-autocmd filetype cpp nnoremap <M-c> :w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand('%')." -o ".expand('%:r')."\<lt>CR>")<CR><C-w>k
+autocmd filetype cpp nnoremap <expr><silent><M-c> (len(term_list())==0)  
+            \? ':w <bar> terminal ++rows=10 <CR><C-l>j' 
+            \: ':w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand("%")." -o ".expand("%:r")."\<lt>CR>")<CR><C-w>k'
 
 inoremap ;; <Esc>/<++><CR>"_c4l
 
@@ -142,6 +166,12 @@ inoremap ;; <Esc>/<++><CR>"_c4l
 autocmd filetype cpp inoremap ;fi for(int i =<++> ; i < <++>; i++){<CR><++><CR>} <Esc>/<++><CR>"_c4l 
 autocmd filetype cpp inoremap ;fj for(int j =<++> ; j < <++>; j++){<CR><++><CR>} <Esc>/<++><CR>"_c4l
 autocmd filetype cpp inoremap ;fk for(int k =<++> ; k < <++>; k++){<CR><++><CR>} <Esc>/<++><CR>"_c4l 
-autocmd filetype cpp inoremap ;# #include <<++>>
+autocmd filetype cpp inoremap ;# #include <><Esc>i
 
 inoremap {<CR> {<CR><CR>}<Esc>kcc
+inoremap '' ''<++><Esc>4hi
+inoremap "" ""<++><Esc>4hi
+inoremap [] []<++><Esc>4hi
+inoremap () ()<++><Esc>4hi
+inoremap {} {}<++><Esc>4hi
+inoremap <> <><++><Esc>4hi
