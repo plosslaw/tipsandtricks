@@ -107,6 +107,10 @@ x/X - cut characters after/before cursor (does not use a noun)
   (ctrl - E)^E – Scroll the screen up
   (ctrl - Y)^Y – Scroll the screen down
 
+markers:
+' ' - go to prev marker
+m [a-z] - set marker at current location
+' [a-z] - go to marker [a-z]
 
 vim nouns:
 w - word
