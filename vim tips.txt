@@ -42,6 +42,8 @@ When pressing you are ctrl+p (ctrl+n), you are shown multiple suggestions and yo
 /(search term) search in text after cursor press n to cycle next, N to go prev
 ?(search term) search in text before cursor press n to cycle next, N to go prev
 
+>3j - indent current line up to 3 lines below (including curr line)
+
 clear highlighting after search: :noh
 
 vim directions: (can indicate repeat mods such as using 5{ to go up 5 paragraphs)
