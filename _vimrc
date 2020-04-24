@@ -63,6 +63,7 @@ filetype plugin indent on
 
 set whichwrap+=<,>,h,l,[,]
 set incsearch
+set encoding=utf-8
 
 "colorscheme desert
 set number relativenumber
