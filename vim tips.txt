@@ -129,3 +129,14 @@ a" - inner quotation including quotation marks
 2k - 2 lines upwards from cursor
 2j - 2 lines downwards from cursor
 3l - 3 char to the right of cursor
+
+
+vim surround:
+
+cs({ - change surround from () to {}
+ysiw" - surround inner word with ""
+yswt - surround word with custom tag, enter custom tag after command
+ds" - remove "" surround
+yes) - surround line with ()
+yes( - surround line with () with spacing
+
