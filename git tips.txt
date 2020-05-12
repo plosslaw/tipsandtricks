@@ -23,6 +23,14 @@ git reset
 show all branches(remote + local)
 git branch -a
 
+
+delete remote branch
+git push origin --delete feature/login
+git push origin :name-of-branch (hacky way)
+
+delete local branch
+git branch -d feature/login
+
 show remote branches
 git branch -r
 
