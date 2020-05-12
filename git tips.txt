@@ -46,6 +46,12 @@ create new remote branch
 git git push <remote-name> <branch-name> 
 git push <remote-name> <local-branch-name>:<remote-branch-name>
 
+clean up local branch after merging
+git checkout develop
+git pull                 // bring develop branch up-to-date
+git fetch --prune        // remove remote-tracking branch
+git branch -D plosslaw-branch // remove local branch
+
 
 checkout branch
 git checkout <name of branch>
