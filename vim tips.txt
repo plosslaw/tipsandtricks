@@ -1,3 +1,13 @@
+ignore vim temp files:
+add .gitignore
+
+*~
+*.swp
+*.swo
+
+git config --global core.excludesfile ~/.gitignore
+
+
 vim -O a.java b.java ----- open in horizontal split
 vim -o a.java b.java ----- open in vertical split
 :split, ctrl-w-direction key to change focused window
