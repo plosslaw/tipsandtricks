@@ -35,6 +35,13 @@ Can you name methods by the same name?
 In Java, a static method is a method that belongs to a class rather than an instance of a class. The method is accessible to every instance of a class, but methods defined in an instance are only able to be accessed by that member of a class.
 
 
+Run Apache24 server
+   cd to Program Files\Apache24\bin
+   httpd -k restart
+
+
+
+
 {
   "key": "ctrl+j",
   "command": "workbench.action.focusActiveEditorGroup",
