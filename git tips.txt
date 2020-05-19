@@ -46,7 +46,7 @@ create new branch clone of old branch
 git checkout -b <new branch> <old branch>
 
 create new remote branch
-git git push <remote-name> <branch-name> 
+git push <remote-name> <branch-name> 
 git push <remote-name> <local-branch-name>:<remote-branch-name>
 git push --set-upstream <remote-name> <local-branch-name> //adds upstream ref 
 
