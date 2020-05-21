@@ -88,3 +88,9 @@ git merge -X theirs feature #keep changes from feature
 git merge -X ours feature #keep changes from master
 git rm {DELETED-FILE-NAME} #for any deletions 
 
+
+Rebase feature branch
+git push origin feature -f
+
+git merge master
+git push origin feature
