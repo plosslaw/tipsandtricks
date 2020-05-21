@@ -94,3 +94,15 @@ git push origin feature -f
 
 git merge master
 git push origin feature
+
+
+Reset remote to certain commit
+git reset --hard <commit-hash> 
+git push -f <remote> <local branch>:<remote branch> 
+
+Get commit hash
+git log //take first 7 char
+
+Reference using HEAD:
+git rebase HEAD~4 // 4 commits ago from current head
+git rebase HEAD~1 // 1 commit ago from current head
