@@ -66,10 +66,25 @@ git merge <name of branch>
 
 
 Clone contents of one branch to existing branch (overwrite):
-git checkout InitialPomChanges
-git checkout develop .  #copies the contents of develop into the working directory
-git commit -am "Making InitialPomChanges match develop"
+git checkout branchA
+git checkout branchB .  #copies the contents of develop into the working directory
+git commit -am "Making branchA match branchB"
 
-Clone contents of one branch to existing branch (overwrite) alt:
-git checkout InitialPomChanges
-git merge -s theirs develop
+Sync feature branch with remote develop branch:
+git checkout develop
+git pull
+git checkout feature
+
+git rebase -X ours develop #keep changes from develop
+git rebase -X theirs develop #keep changes from feature
+
+
+Merge feature branch with master branch:
+git checkout feature
+git pull
+git checkout master
+
+git merge -X theirs feature #keep changes from feature
+git merge -X ours feature #keep changes from master
+git rm {DELETED-FILE-NAME} #for any deletions 
+
