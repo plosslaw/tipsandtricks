@@ -62,3 +62,14 @@ git checkout <name of branch>
 
 merge selected branch with current branch
 git merge <name of branch>
+
+
+
+Clone contents of one branch to existing branch (overwrite):
+git checkout InitialPomChanges
+git checkout develop .  #copies the contents of develop into the working directory
+git commit -am "Making InitialPomChanges match develop"
+
+Clone contents of one branch to existing branch (overwrite) alt:
+git checkout InitialPomChanges
+git merge -s theirs develop
