@@ -110,3 +110,14 @@ git rebase HEAD~1 // 1 commit ago from current head
 
 update list of remote branches
 git remote update origin --prune
+
+stash local changes (no commit)
+git stash
+
+Remove stash 
+git stash list
+git stash drop <stash_id>
+git stash clear
+
+remove local changes
+git clean
