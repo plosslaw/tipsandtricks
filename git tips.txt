@@ -106,3 +106,7 @@ git log //take first 7 char
 Reference using HEAD:
 git rebase HEAD~4 // 4 commits ago from current head
 git rebase HEAD~1 // 1 commit ago from current head
+
+
+update list of remote branches
+git remote update origin --prune
