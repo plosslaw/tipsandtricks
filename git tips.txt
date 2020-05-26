@@ -25,7 +25,7 @@ git branch -a
 
 
 delete remote branch
-git push origin --delete feature/login
+git push origin --delete feature (login etc.)
 git push origin :name-of-branch (hacky way)
 
 delete local branch
