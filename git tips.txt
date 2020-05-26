@@ -120,4 +120,7 @@ git stash drop <stash_id>
 git stash clear
 
 remove local changes
-git clean
+git checkout .
+
+remove untracked files/dir
+git clean -f(d)
