@@ -95,6 +95,8 @@ git push origin feature -f
 git merge master
 git push origin feature
 
+force git pull
+git reset --hard <remote repo>/<remote-branch>
 
 Reset remote to certain commit
 git reset --hard <commit-hash> 
