@@ -56,3 +56,6 @@ Run Apache24 server
 
 Visual Studio Build Tools - .NET 4.5 targeting pack
 https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15
+
+bash clear history
+history -c
