@@ -2,6 +2,8 @@ win-x u u for fast shut down
 
 .src returns resolved URL, getAttribute("src") gives relative path
 
+add tabindex to html element to enable focus tracking
+
 enable right click pasting shortcut
 command prompt -> right click title bar -> properties -> options -> edit options -> quickedit
 
