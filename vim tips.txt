@@ -41,6 +41,7 @@ delete all lines - gg dG (go to top and delete to bottom)
 gt - cycle through tabs forward
 gT - cycle through tabs backward
 <num> gt - go to tab <num>
+:wa/:wall - save all tabs/buffer
 
 settings
 copy vimrc to C:\Users\Your Name\_vimrc and use the copied vimrc file
