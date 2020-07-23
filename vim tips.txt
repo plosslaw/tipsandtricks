@@ -35,7 +35,7 @@ gp -- paste and move cursor to end of pasted text
 :args *.cpp - add all files in current dir to args
 :tab all - open all files in args
 :argadd *.cpp | tab all
-:read filename/:r sk.cpp - copy contents of filename to current editor
+:read filename/:r zk.cpp - copy contents of filename to current editor
 gt - cycle through tabs forward
 gT - cycle through tabs backward
 <num> gt - go to tab <num>
