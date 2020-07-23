@@ -91,7 +91,7 @@ autocmd filetype cpp nnoremap <expr><silent><F6> (len(term_list())==0)
 
 autocmd filetype cpp nnoremap <expr><silent><F7> (len(term_list())==0)  
             \? ':w <bar> terminal ++rows=10 <CR><C-l>j' 
-            \: ':w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand("%")." -o ".expand("%:r")."\<lt>CR>")<CR><C-w>k'fdskljfsa
+            \: ':w <bar> call term_sendkeys(term_list()[0],"g++ -ulimit -Wall -Wno-unused-result -std=c++14 -O2 ".expand("%")." -o ".expand("%:r")."\<lt>CR>")<CR><C-w>k'
 inoremap jj <ESC>
 vnoremap ii <ESC>
 
