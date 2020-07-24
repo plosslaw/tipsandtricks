@@ -164,13 +164,13 @@ autocmd filetype cpp nnoremap <expr><silent><M-c> (len(term_list())==0)
 inoremap ;; <Esc>/<++><CR>"_c4l
 
 "for loop snippet
-autocmd filetype cpp inoremap ;fi for(int i =<++>; i < <++>; i++){<CR><++><CR>} <Esc>/<++><CR>"_c4l 
-autocmd filetype cpp inoremap ;fj for(int j =<++>; j < <++>; j++){<CR><++><CR>} <Esc>/<++><CR>"_c4l
-autocmd filetype cpp inoremap ;fk for(int k =<++>; k < <++>; k++){<CR><++><CR>} <Esc>/<++><CR>"_c4l 
+autocmd filetype cpp inoremap ;fi for(int i = <++>; i < <++>; i++){<CR><++><CR>} <Esc>/<++><CR>"_c4l
+autocmd filetype cpp inoremap ;fj for(int j = <++>; j < <++>; j++){<CR><++><CR>} <Esc>/<++><CR>"_c4l
+autocmd filetype cpp inoremap ;fk for(int k = <++>; k < <++>; k++){<CR><++><CR>} <Esc>/<++><CR>"_c4l
 
-autocmd filetype java inoremap ;fi for(int i =<++>; i < <++>; i++){<CR><++><CR>} <Esc>/<++><CR>"_c4l 
-autocmd filetype java inoremap ;fj for(int j =<++>; j < <++>; j++){<CR><++><CR>} <Esc>/<++><CR>"_c4l
-autocmd filetype java inoremap ;fk for(int k =<++>; k < <++>; k++){<CR><++><CR>} <Esc>/<++><CR>"_c4l 
+autocmd filetype java inoremap ;fi for(int i = <++>; i < <++>; i++){<CR><++><CR>} <Esc>/<++><CR>"_c4l
+autocmd filetype java inoremap ;fj for(int j = <++>; j < <++>; j++){<CR><++><CR>} <Esc>/<++><CR>"_c4l
+autocmd filetype java inoremap ;fk for(int k = <++>; k < <++>; k++){<CR><++><CR>} <Esc>/<++><CR>"_c4l
 
 autocmd filetype cpp inoremap ;# #include <><Esc>i
 
