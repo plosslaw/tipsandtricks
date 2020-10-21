@@ -134,6 +134,7 @@ markers:
 ' ' - go to prev marker
 m [a-z] - set marker at current location
 ' [a-z] - go to marker [a-z]
+'. - go to last edit location
 
 vim nouns:
 w - word
