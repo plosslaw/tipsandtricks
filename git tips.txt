@@ -130,3 +130,6 @@ git clean -f(d)
 rename branch
 git branch -M <oldname> <newname>
 git branch -M <newname>
+
+to refresh and check status
+git status
