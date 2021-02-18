@@ -3,6 +3,13 @@ heroku git:remote -a thawing-inlet-61413
 
 git status
 
+for multi ssh keys:
+- create config file in ~/.ssh folder
+
+Host github.com
+    IdentityFile ~/.ssh/github_rsa
+
+
 git cheatsheet:
 
 git clone git@github.com:USER-NAME/REPOSITORY-NAME.git or git clone https://github.com/user-name/repository-name.git
