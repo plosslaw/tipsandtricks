@@ -39,7 +39,6 @@ function MyDiff()
   endif
 endfunction
 
-execute pathogen#infect()
 "set t_Co=256
 "syntax enable
 "if (has("termguicolors"))
@@ -48,12 +47,13 @@ execute pathogen#infect()
 
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Inconsolata\ 16
+    set guifont=Inconsolata\ 12
   elseif has("gui_macvim")
-    set guifont=Menlo\ Regular:h16
+    set guifont=Menlo\ Regular:h14
   elseif has("gui_win32")
-    set guifont=Consolas:h16:cANSI
+    set guifont=Consolas:h11:cANSI
   endif
+  execute pathogen#infect()
   colorscheme OceanicNext
 else
   colorscheme desert
