@@ -13,7 +13,11 @@ ctrl - shift - o -- open chrome bookmarks (can search within bookmarks)
 
 cls - clear cmd
 
+// download file using curl
 curl http://some.url --output some.file
+
+// using curl write-out option
+curl -w 'We downloaded %{size_download} bytes\n' www.download.com
 
 checkstyle for java
 https://github.com/checkstyle/checkstyle/releases/
