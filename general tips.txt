@@ -13,6 +13,8 @@ ctrl - shift - o -- open chrome bookmarks (can search within bookmarks)
 
 cls - clear cmd
 
+curl http://some.url --output some.file
+
 checkstyle for java
 https://github.com/checkstyle/checkstyle/releases/
 
