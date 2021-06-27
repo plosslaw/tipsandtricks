@@ -14,10 +14,13 @@ ctrl - shift - o -- open chrome bookmarks (can search within bookmarks)
 cls - clear cmd
 
 ctrl + e - shift cursor to end of line (bash)
-ctrl + u - delete all before cursor (bash)
+ctrl + u - cut all before cursor (bash)
 
 ctrl + a - shift cursor to start of line (bash)
-ctrl + k - delete all after cursor (bash)
+ctrl + k - cut all after cursor (bash)
+
+ctrl + y - paste cut contents
+ctrl + _ - undo change
 
 esc - clear current line (cmd)
 
