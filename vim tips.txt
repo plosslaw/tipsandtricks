@@ -165,5 +165,9 @@ yes( - surround line with () with spacing
 
 visual block mode: 
 - select lines you want
-- shift+i to insert
+- shift+i to insert at beginning
+- shift+a to append text
+- r to replace highlighted
+- c to change
+- d to delete
 - esc to finalise change

@@ -13,7 +13,12 @@ ctrl - shift - o -- open chrome bookmarks (can search within bookmarks)
 
 cls - clear cmd
 
-ctrl + u - clear current line (bash)
+ctrl + e - shift cursor to end of line (bash)
+ctrl + u - delete all before cursor (bash)
+
+ctrl + a - shift cursor to start of line (bash)
+ctrl + k - delete all after cursor (bash)
+
 esc - clear current line (cmd)
 
 // download file using curl
@@ -72,3 +77,6 @@ https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Buil
 
 bash clear history
 history -c
+
+
+chrome://net-export/
