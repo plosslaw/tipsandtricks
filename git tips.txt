@@ -143,5 +143,7 @@ git status
 
 git reset --soft HEAD~1 - revert to previous commit but keep working tree
 
-git restore --stage <filename> - undo staging
+git restore --staged <filename> - undo staging
 git restore <filename> - undo changes
+
+git restore --staged . - unstage all
