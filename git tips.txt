@@ -147,3 +147,5 @@ git restore --staged <filename> - undo staging
 git restore <filename> - undo changes
 
 git restore --staged . - unstage all
+
+git commit --amend -m "New commit message."
