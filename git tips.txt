@@ -149,3 +149,9 @@ git restore <filename> - undo changes
 git restore --staged . - unstage all
 
 git commit --amend -m "New commit message."
+
+only select added, copied and modified files for git diff
+git diff --diff-filter=ACM
+
+exclude deleted and renamed file in git diff
+git diff --diff-filter=dr

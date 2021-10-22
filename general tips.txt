@@ -91,3 +91,10 @@ netsh int ip reset
 ipconfig /release
 ipconfig /flushdns
 ipconfig /renew
+
+track time taken for request
+curl -v --trace-time
+
+using write-out format file
+curl -w "@curl-format.txt" -o NUL -s
+curl -w "@curl-format.txt" -o /dev/null -s
