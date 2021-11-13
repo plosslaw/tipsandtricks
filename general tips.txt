@@ -1,5 +1,33 @@
 win-x u u for fast shut down
 
+for ssd health
+https://superuser.com/questions/237813/how-can-i-move-the-page-file-to-another-physical-disk-location
+
+-------------------------------------------------------------------
+In the Start Menu search box, type "Advanced System Settings" and choose the Control Panel applet that should show up, "View advanced system settings"
+
+Under "Advanced" tab, "Performance" section, click "Settings..."
+
+Under "Advanced" tab, "Virtual Memory" section, click "Change..."
+
+Uncheck "Automatically manage paging file size for all drives" and you can change these settings. Highlight the drive you want it on, and select either a fixed size or system managed size, and then click "Set". YOU HAVE TO CLICK THE SET BUTTON. Do the same to remove it from the drive you don't want it on. ("No paging file".)
+
+
+move temp files to hdd
+
+1. Right click on Computer and click on Properties. In the resulting window with the basic information about your computer
+
+2. Click on Advanced system settings on the left panel resulting in a dialog box click on the advanced tab.
+
+3. Click on the button near the bottom labeled Environment Variables.
+
+4. You may see both TMP and TEMP listed in the section labeled User variables for (account). That's the common location; each different login account is assigned its own temporary location.
+
+5. In the Variable value Edit box you may specify the path to the directory that Windows and many other programs will use for temporary files.
+
+
+-------------------------------------------------------------------
+
 .src returns resolved URL, getAttribute("src") gives relative path
 
 add tabindex to html element to enable focus tracking
