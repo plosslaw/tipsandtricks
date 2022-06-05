@@ -1,3 +1,5 @@
+language messages English_United States
+set langmenu=en_US.UTF-8  
 " Vim with all enhancements
 source $VIMRUNTIME/vimrc_example.vim
 

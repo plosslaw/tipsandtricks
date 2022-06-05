@@ -1,0 +1,82 @@
+edges (STARTING)
+A   B   Ch  D
+E   F   G   H
+I   J   K   L
+M   N   O   P
+<Q> R   S   T
+U   Br  Sl  Z
+
+
+edges (ENDING)
+A   aB  aCh aD
+E   eF  eG  eNG
+I   iSH iK  iL
+oM  oN  O   oP
+<Q> oR  oS  oT
+U   uSK uMP uX
+
+
+m2: G/I -> Q = I
+3s: CH/E -> Q = E
+
+
+corners
+U: A  B  C  D
+F: E  F  G  H
+D: I  J  K  L
+B: M  N  O  P
+L: Q  R  S  T
+R: U  V  W  X
+
+
+rd twist alg
+[R' D' R D R' D' R, U2]
+
+parity m2
+D' RW2 U RW2' R2 U' RW2' D
+twisted 
+2 twist outside buffer
+buffer>U/D sticker 1st>U/D sticker 2nd
+buffer>U/D face 2nd>U/D sticker 1st when memo'd
+
+3 twist w/ buffer
+buffer>U/D sticker 1st>U/D sticker 2nd
+buffer>U/D face 2nd>odd sticker 1st
+
+3 twist outside buffer
+buffer>U/D sticker 1st>U/D sticker 2nd
+buffer>U/D face 2nd>U/D sticker 3rd
+buffer>U/D face 3rd>U/D sticker 1st when memo'd
+
+4 twist with buffer
+buffer>U/D sticker 1st>U/D sticker 2nd
+buffer>U/D face 2nd>U/D sticker 3rd
+buffer>U/D face 3rd>U/D face 1st
+
+UPERM FROM BACK
+opp colours left
+M2 U M' U2 M U M2
+opp colours right
+M2 U' M' U2 M U' M2
+
+two flip
+buffer and downback
+KA AM
+
+M' R' U' D' M'
+ 
+4flip alg
+(M' U')x3 M' U (M' U')x3 M' U
+(M' U')x4 (M' U)x4
+(M' U')x4 (M U')x4
+(M' U')x3 M2 (U M')x3
+
+U' R' U R (M' U')x4 R' U' R U
+
+sune flips
+dao- no respect, same hand, anti down x2
+lover- respect, change hand, stan up x1
+middleman- respect, same hand, anti up x2
+rifle- no respect, change hand, anti down x2
+
+f2l flip edge in slot - R2 U2 F R2 F' U2 R' U R'

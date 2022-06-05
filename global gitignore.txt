@@ -3,5 +3,5 @@
 *.swo
 *.un~
 
-run command 
-git config --global core.excludesfile ~/.gitignore
+# run command 
+# git config --global core.excludesfile ~/.gitignore

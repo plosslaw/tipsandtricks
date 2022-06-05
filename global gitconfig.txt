@@ -1,0 +1,6 @@
+[user]
+	name = plosslaw
+	email = plosslaw@gmail.com
+[core]
+	excludesfile = C:/Users/plosslaw/.gitignore
+	autocrlf = false

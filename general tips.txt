@@ -25,6 +25,13 @@ move temp files to hdd
 
 5. In the Variable value Edit box you may specify the path to the directory that Windows and many other programs will use for temporary files.
 
+internet temp files
+
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+--disk-cache-dir="D:\Temporary Internet Files\Chrome"
+
+about:config > browser.cache.disk.parent_directory > "D:\Temporary Internet
+Files\FireFox"
 
 -------------------------------------------------------------------
 
@@ -126,3 +133,7 @@ curl -v --trace-time
 using write-out format file
 curl -w "@curl-format.txt" -o NUL -s
 curl -w "@curl-format.txt" -o /dev/null -s
+
+youtube-dl -f <format> -o <filename> --no-check-certificate
+
+ffmpeg -protocol_whitelist file,http,https,tcp,tls -allowed_extensions ALL -i input.m3u8 -bsf:a aac_adtstoasc -c copy out.mp4
