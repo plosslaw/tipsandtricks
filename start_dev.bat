@@ -1,9 +1,10 @@
 ::place just outside ALweb folder
-mode con: cols=80 lines=20
+mode con: cols=80 lines=15
 
 cd ALweb/build/dev
 start cmd.exe /k "npm run dev"
 start cmd.exe /k "sass --watch stylingSrc:public/static/editor/css"
+start cmd.exe /k "node workers/FolderReportMailWorker"
 
 cd ../../learn
 start cmd.exe /k "npm run dev"

@@ -134,6 +134,7 @@ using write-out format file
 curl -w "@curl-format.txt" -o NUL -s
 curl -w "@curl-format.txt" -o /dev/null -s
 
-youtube-dl -f <format> -o <filename> --no-check-certificate
+youtube-dl -f <format> -o <filename> --no-check-certificate "<url>"
+- add quotes since & will break the link
 
 ffmpeg -protocol_whitelist file,http,https,tcp,tls -allowed_extensions ALL -i input.m3u8 -bsf:a aac_adtstoasc -c copy out.mp4

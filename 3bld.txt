@@ -1,19 +1,19 @@
 edges (STARTING)
-A   B   Ch  D
-E   F   G   H
+A   B   <>  D
+<>  F   G   H
 I   J   K   L
 M   N   O   P
-<Q> R   S   T
-U   Br  Sl  Z
+E   R   S   T
+U   Ch  Sl  Z
 
 
 edges (ENDING)
-A   aB  aCh aD
-E   eF  eG  eNG
+A   aB  <>  aD
+<>  eF  eG  eNG
 I   iSH iK  iL
-oM  oN  O   oP
-<Q> oR  oS  oT
-U   uSK uMP uX
+iM  oN  O   oP
+E   oR  oS  oT
+U   uCh uMP uX
 
 
 m2: G/I -> Q = I
@@ -21,16 +21,34 @@ m2: G/I -> Q = I
 
 
 corners
-U: A  B  C  D
-F: E  F  G  H
-D: I  J  K  L
-B: M  N  O  P
-L: Q  R  S  T
-R: U  V  W  X
+U: A   B  -  D
+F: E   -  G  H
+D: I   J  K  L
+B: M   N  O  P
+L: <Q> R  S  T
+R: -   V  W  X
 
+OP: <Q> not used
+3s: <Q> -> C
+
+OP/M2 -> Orozco/EKA -> 3style/3style
+
+M2 special cases:
+O: B' U R' B U' (M2) U B' R U' B  
+C: U2 M' U2 M'
+E: D M' U R2 U' M U R2 U' D' M2
+K: M U2 M U2
+M: M2' D U R2 U' M' U R2 U' M D'
+
+5-cycle can be decomposed to 2 3-cycles:
+XABCDX -> XABX + XCDX
 
 rd twist alg
 [R' D' R D R' D' R, U2]
+
+3 twist sune
+lefty sune + righty s-first u-perm + U2
+righty sune + lefty s-first u-perm + U2
 
 parity m2
 D' RW2 U RW2' R2 U' RW2' D
