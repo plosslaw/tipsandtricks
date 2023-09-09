@@ -171,3 +171,7 @@ visual block mode:
 - c to change
 - d to delete
 - esc to finalise change
+
+
+ctrl + a: increment first numeric occurrence to the right
+ctrl + x: decrement first numeric occurrence to the right

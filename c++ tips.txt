@@ -1,4 +1,11 @@
 c++:
+
+compile
+g++ a.cpp -o a -ulimit -Wall -Wno-unused-result -std=c++14 -O2
+
+pipe input into program
+echo $(echo '961 5 1 2 3 6 7') | ./a
+
 input end of input character with ctrl-z(win) ctrl-d(unix)
 
 for(pair<int, int>& p:arr){...} ---- obtain reference to each element
