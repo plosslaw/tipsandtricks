@@ -14,6 +14,11 @@ for(pair<int, int> p:arr){...} ---- creates copy of each element
 
 include <algorithm> to enable min({...}) finding min of a list of elements
 
+#include <bits/stdc++.h>
+
+use ' single quotation mark as digit separator
+e.g. int num = 1'000'000'000;
+
 initialising vector
 
 1.
