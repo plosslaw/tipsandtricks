@@ -4,3 +4,10 @@
 [core]
 	excludesfile = C:/Users/plosslaw/.gitignore
 	autocrlf = false
+	ignorecase = false
+[pull]
+	rebase = true
+	default = current
+[push]
+	autoSetupRemote = true
+	default = current
